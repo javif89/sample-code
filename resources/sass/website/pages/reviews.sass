@@ -1,0 +1,156 @@
+#reviews
+    .hero
+        background: url('/images/reviews-hero.jpg') no-repeat center center
+        background-size: cover
+        color: white
+        padding: 120px 0
+        text-align: center
+
+        .title
+            font-size: 55px
+            font-weight: 800
+        .subtitle
+            font-size: 20px
+            line-height: 31px
+    .logo-section
+        display: flex
+        align-items: center
+
+        .logo
+            height: auto
+            margin-right: 10px
+        .text
+            font-size: 11px	
+            font-weight: 600
+            line-height: 15px
+            color: #8C8C8C
+    .review-tabs
+        .nav-tabs
+            border: none
+            .nav-item
+                .nav-link
+                    text-align: center
+                    opacity: 0.5
+                    position: relative
+                    img
+                        height: 120px
+                        width: auto
+                        margin-bottom: 5px
+                    p
+                        color: black
+                .nav-link.active
+                    border: none
+                    opacity: 1
+                    background: transparent
+                .nav-link.active:after, .nav-link.active:before
+                    top: 100%
+                    left: 50%
+                    border: solid transparent
+                    content: " "
+                    height: 0
+                    width: 0
+                    position: absolute
+                    pointer-events: none
+
+                .nav-link.active:after
+                    border-color: rgba(255, 255, 255, 0)
+                    border-top-color: #ffffff
+                    border-width: 20px
+                    margin-left: -20px
+                    border-radius: 4px
+                .nav-link.active:before
+                    border-color: rgba(255, 255, 255, 0)
+                    border-top-color:#D3D3D3
+                    border-radius: 4px
+                    border-width: 21px
+                    margin-left: -21px
+        .tab-content
+            background-color: #FAFAFA
+            border-top: 1px solid #D3D3D3
+    .facebook-reviews-carousel
+        .slick-track
+            display: flex
+            align-items: stretch
+            .slick-slide
+                height: auto
+                align-items: center //optional
+                justify-content: center //optional
+        .facebook-card
+            .card-header
+                background-color: white
+                border-bottom: none
+            .name
+                color: #385898
+                font-size: 16px
+                font-weight: bold
+    .tab-content > .tab-pane
+        display: block  
+        height: 0      
+        overflow-y: hidden
+    .tab-content
+        .tab-pane.active
+            height: auto
+    h3
+        font-size: 25px
+        font-weight: 800
+        line-height: 35px
+    p
+        font-size: 16px
+        line-height: 30px
+
+
+@media (min-width: 1000px)
+    #reviews
+        .hero
+            .container
+                max-width: 1000px
+                width: 1000px
+
+@media (max-width: 480px)
+    #reviews
+        .hero
+            background-image: url('/images/reviews-hero-mobile.jpg')
+            padding: 30px
+            .title
+                font-size: 30px
+                line-height: 40px
+            .subtitle
+                font-size: 18px
+                line-height: 28px
+        .collage
+            max-width: 100%
+            overflow-x: auto
+            img
+                width: 240%
+                max-width: initial
+                margin: 0 10px
+        .logo-section
+            flex-direction: column
+            align-items: center
+
+            .logo
+                margin-bottom: 10px
+                margin-right: 0
+        .review-tabs
+            .container
+                width: 100%
+                padding: 0
+            .nav-tabs
+                overflow-x: auto
+                flex-wrap: nowrap
+                .nav-item
+                    .nav-link
+                        padding-top: 0
+                        padding-bottom: 0
+                        p
+                            margin-bottom: 0
+                    .nav-link.active
+                        border-bottom: 4px solid $color-primary
+                        
+                    .nav-link.active::before,.nav-link.active::after
+                        display: none
+            .info
+                flex-direction: column
+
+                .btn
+                    margin-top: 10px

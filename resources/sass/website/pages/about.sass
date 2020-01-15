@@ -1,0 +1,157 @@
+#about
+    h1
+        font-size: 45px
+        line-height: 55px
+        font-weight: 800
+    h2
+        font-size: 55px
+        font-weight: 800
+        line-height: 67px
+    h3
+        font-size: 36px
+        font-weight: bold
+        line-height: 48px
+
+    .hero
+        background-image: url('/images/about/hero-desktop.png')
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        height: 600px
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+        .content
+            margin-left: 80px
+    #about-grid
+        display: grid
+        grid-template-columns: [col-start] 33.3% [col-mid] 33.3% [col-separator] 33.3% [col-end]
+        grid-template-rows: [row-start] 33.3% [row-mid] 33.3% [row-separator] 33.3% [row-end]
+        grid-row-gap: 2px
+        grid-column-gap: 2px
+        color: white
+        height: 980px
+        width: 100%
+        overflow: hidden
+        margin-top: 2px
+
+        .item
+            padding: 0 100px
+            text-align: center
+
+        #know-us
+            grid-column: col-start / col-separator
+            grid-row: row-start / row-separator
+            background: url('/images/about/know-us.jpg') no-repeat center center
+            background-size: cover
+            text-align: left
+        #team
+            grid-column: col-separator / col-end
+            grid-row: row-start / row-mid
+            background: url('/images/about/team.jpg') no-repeat center center
+            background-size: cover
+        #universal-business
+            grid-column: col-separator / col-end
+            grid-row: row-mid / row-end
+            background: url('/images/about/universal-business.jpg') no-repeat center center
+            background-size: cover
+        #cio-review
+            grid-column: col-start / col-mid
+            grid-row: row-separator / row-end
+            background: url('/images/about/cioreview.jpg') no-repeat center center
+            background-size: cover
+        #power-75
+            grid-column: col-mid / col-separator
+            grid-row: row-separator / row-end
+            background: url('/images/about/stitches.jpg') no-repeat center center
+            background-size: cover
+    #globe
+        background-color:#FAFAFA
+
+@media (max-width: 768px)
+    #about
+        .hero
+            background-image: url('/images/about/hero-tablet.png')
+            text-align: center
+            
+            h2
+                font-size: 42px
+
+            .content
+                max-width: 90%
+                margin: auto
+        #about-grid
+            .item
+                padding: 0 20px
+
+                h3
+                    font-size: 23px
+                    line-height: 33px
+            #know-us
+                h3
+                    font-size: 31px
+                    line-height: 42px
+
+@media (max-width: 480px)
+    #about
+        h2
+            font-size: 25px
+            font-weight: 800
+            line-height: 37px
+        h3
+            font-size: 20px
+            font-weight: bold
+            line-height: 32px
+        .hero
+            background-image: url('/images/about/hero-mobile.png')
+            height: auto
+            padding: 40px 0
+            text-align: center
+
+            h2
+                font-size: 38px
+                line-height: 48px
+            p
+                font-size: 18px !important
+                line-height: 28px !important
+
+            .content
+                max-width: 90%
+                margin: auto
+        #about-grid
+            display: flex
+            flex-direction: column
+            height: auto
+            margin-top: 0
+            .item
+                padding: 30px 15px
+                margin-top: 2px
+                text-align: left
+
+                h3
+                    font-size: 23px
+                    line-height: 33px
+            #know-us
+                h3
+                    font-size: 23px
+                    line-height: 33px
+            #cio-review,#power-75
+                width: 50%
+                height: auto
+
+                p
+                    font-size: 14px !important
+                    line-height: 22px
+            #cio-review
+                margin-right: 2px
+        #a-message
+            text-align: center
+            h3
+                font-size: 30px
+                text-align: center
+            p.message
+                text-align: left
+            img#signature
+                margin: auto
+                margin-bottom: 30px

@@ -1,0 +1,115 @@
+.footer_wrapper
+    background: #000000
+
+    .logo
+        width: 100%
+
+    .footer_col_list
+        span
+            color: white
+        li
+            margin: 15px 0px
+            a
+                color: #A0A2A6
+
+    a
+        color: white
+        font-weight: normal
+
+        li
+            font-size: 14px
+            padding-top: 1.25rem
+            color: #A0A2A6
+    .section-toggle
+        display: flex
+        justify-content: space-between
+        padding: 10px 15px
+        border-bottom: 1px solid #131313
+        .column_title
+            color: white
+        .fa-plus
+            display: none
+    .section-toggle.collapsed
+        .fa-minus
+            display: none
+        .fa-plus
+            display: block
+
+    .locale-option-select
+        .lang-select-container
+            .bootstrap-select
+                .dropdown-toggle
+                    background: transparent
+                    position: relative
+                    box-sizing: border-box
+                    height: 47px
+                    border: 1px solid #9EA0A4
+                    border-radius: 4px
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    color: #A0A2A6
+                    max-width: 100%
+                    width: 100%
+                .dropdown-menu
+                    .dropdown-item
+                        color: black
+                        .text
+                            color: black !important
+                    .dropdown-item.active
+                        color: black
+                        background-color: white
+        .country-select-btn
+            box-sizing: border-box
+            height: 47px
+            width: 180px
+            max-width: 100%
+            border: 1px solid #9EA0A4
+            border-radius: 4px
+            margin: 0px 8px
+            margin-right: 0
+            .active-country
+                cursor: pointer
+                display: flex
+                flex-direction: row
+                width: 100%
+                align-items: center
+                height: 100%
+                justify-content: center
+                .country-name
+                    color: #A0A2A6
+                    font-size: 14px
+                .flag
+                    font-size: 39px
+                    margin-right: 8px
+@media (max-width: 1200px)
+    .footer_wrapper
+        .container
+            max-width: 100%
+@media (max-width: 768px)
+    .footer_wrapper
+        .logo
+            max-width: 180px
+        .footer_col_list
+            padding: 10px 15px
+        .bottom-footer
+            background-color: #131313
+
+            p
+                font-size: 12px
+                margin-bottom: 0
+        .locale-option-select
+            justify-content: space-between
+            padding-left: 15px
+            padding-right: 15px
+            .lang-select-container
+                .bootstrap-select
+                    width: 100%
+                    .dropdown-toggle
+                        width: initial
+@media (min-width: 769px)
+    .footer_wrapper
+        .collapse
+            display: block !important
+        .section-toggle
+            display: none

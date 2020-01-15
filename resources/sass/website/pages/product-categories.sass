@@ -1,0 +1,234 @@
+#product-categories-container
+    padding: 59px 0px 45px
+    .category-header
+        color: #000000
+        font-family: "Open Sans"
+        font-size: 55px
+        font-weight: 800
+        line-height: 68px
+        text-align: center
+        margin: 14px 0px
+    .select-3
+        color: #474747
+        font-family: "Open Sans"
+        font-size: 16px
+        font-weight: 600
+        line-height: 31px
+        text-align: center
+        height: 31px
+    .compare-btns
+        display: flex
+        justify-content: center
+        margin: 3px 0px
+        .compare-btn
+            display: flex
+            justify-content: center
+            height: 60px
+            // width: 220px
+            border-radius: 30px
+            color: #F17D21
+            font-family: "Open Sans"
+            font-size: 14px
+            font-weight: bold
+            line-height: 30px
+            text-align: center
+            align-items: center
+            letter-spacing: 0.5px
+            margin: 0px 7px
+            background: #FFFFFF
+        .compare-link
+            text-decoration: none
+            .comparison-link
+                width: 220px
+                border: 1px solid #F17D21
+        .start-compare
+            width: 224px
+            border: 1px solid #F17D21
+            text-decoration: none
+        .cancel-compare
+            color: #FFFFFF
+            background: #000000
+            width: 224px
+            .cancel-btn
+                margin: 0px 7px
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 20px
+                width: 20px
+                background: #FFFFFF
+                border-radius: 50%
+                color: #000000
+    .align-products
+        display: flex
+        justify-content: center
+        margin-top: 38px
+        .products-container
+            display: flex
+            justify-content: center
+            align-items: stretch
+            flex-wrap: wrap
+            // width: 1440px
+            padding: 0px 163px
+            .enabled
+                border: 1px solid #000000
+            .no-click
+                pointer-events: none
+            .card
+                padding: 40px
+                margin: 20px
+                width: 331px
+            .move-left
+                margin-right: auto
+                opacity: 0
+                // margin: 20px auto 20px 11.25rem
+            .product-header
+                font-size: 24px
+                font-weight: 800
+                line-height: 43px
+                text-align: center
+            .compare-radio
+                display: flex
+                justify-content: center
+                align-content: center
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                .round 
+                    width: 100%
+                    height: 100%
+                    position: relative
+                    display: flex
+                    justify-content: center
+                .prod-radio 
+                    visibility: hidden
+                    -webkit-appearance: none
+                    display: none
+                .mask 
+                    border: 1px solid #ccc
+                    height: 100%
+                    width: 100%
+                    background-color: #fff
+                    cursor: pointer
+                    left: 0
+                    position: absolute
+                    top: 0
+                    opacity: 0
+                .product-radio
+                    opacity: 1
+                    height: 24px
+                    width: 24px
+                    border-radius: 50%
+                    border: 1px solid #E7E9EB
+                    background-color: #F9FAFB
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    margin: 10px 0px
+                    .radio-check
+                        height: 12px
+                        width: 12px
+                        border-radius: 50%
+                .round input:checked ~ .product-radio
+                    .radio-check 
+                        background-color: #0F1A27
+            .img-container
+                display: flex
+                justify-content: center
+                align-items: center
+                min-height: 290px
+                .img-fluid
+                    max-height: 290px
+            .product-link
+                color: #0083EA
+                font-family: "Open Sans"
+                font-size: 16px
+                font-weight: bold
+                line-height: 30px
+                text-align: center
+            .card-text
+                text-align: left
+                color: #000000
+                font-family: "Open Sans"
+                font-size: 16px
+                line-height: 28px
+                
+@media (max-width: $custom-bp1)
+    #product-categories-container   
+        .align-products
+            .products-container
+                .card.move-left
+                    margin-right: 20px
+@media (max-width: $lg-bp)
+    #product-categories-container   
+        .align-products
+            .products-container
+                padding: 0px !important
+                .card.move-left
+                    margin-right: 6px
+                .card
+                    margin: 6px
+                    .product-header
+                        margin-bottom: 0px
+                    .card-text
+                        margin-bottom: 0px
+@media (max-width: $sm-bp)
+    .category-container
+        width: 100%
+        display: flex
+        justify-content: center
+        #product-categories-container
+            width: 100vw
+            overflow: hidden
+            .category-header
+                color: #000000
+                font-family: "Open Sans"
+                font-size: 28px
+                font-weight: 700
+                line-height: 40px
+                text-align: center
+            .compare-btns
+                width: 100%
+                .comparison-link
+                    width: 100%
+                .start-compare
+                    width: 224px
+                .compare-link
+                    width: 50%
+                    .compare-btn
+                        // width: 169px
+                        font-size: 3vw
+                        margin: 0 auto
+                .cancel-compare
+                    width: 50%
+                    font-size: 3vw
+            // .compare-btns > *
+            //     width: 169px
+            //     font-size: 13px
+            //     margin: 0 auto
+            .products-container
+                width: 100%
+                padding: 30px 0px
+                .card
+                    width: 48%
+                    margin: 5px 2px !important
+                    padding: 16px
+                    .product-header
+                        margin-top: 8px
+                        margin-bottom: 6px
+                        font-size: 19px
+                    .img-container
+                        max-height: 155px
+                        margin-bottom: 6px
+                        min-height: 130px
+                        .img-fluid
+                            max-height: 155px
+                    .product-link
+                        margin-bottom: 6px
+                    .card-text
+                        font-size: 14px
+                        font-weight: bold
+                        line-height: 24px
+                        margin-bottom: 6px

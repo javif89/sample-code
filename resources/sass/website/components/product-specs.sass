@@ -1,0 +1,136 @@
+.em-1010-wrapper // em-1010 specic styles
+    #product-specs
+        background: url('/images/Spec Background.png') !important
+        .spec-header
+            filter: invert(1)
+        .spec
+            .spec-icon
+                filter: invert(0) !important
+            .item-value
+                color: #000000 !important
+            .item-label
+                color: #000000 !important
+
+#machineDetailsTabContent
+    .tab-pane
+        background: black
+        height: auto
+
+    .tab_title
+        color: #FFFFFF
+        font-size: 26px
+        font-weight: 800
+        line-height: 38px
+        padding-bottom: 1rem
+        text-transform: capitalize
+
+    #product-specs
+        background: #000000
+        width: 100%
+        height: auto
+        display: flex
+        align-items: center
+        justify-content: center
+        display: flex
+        flex-direction: row
+        .specs-container
+            width: 100%
+            height: auto
+            padding: 35px 0px
+            max-width: 852px
+            display: flex   
+            flex-direction: column
+            flex-wrap: wrap
+            .spec-subsection
+                display: flex
+                flex-direction: column
+            .spec-header
+                color: #FFFFFF
+                font-size: 32px
+                font-weight: 600
+                line-height: 43px
+                border-bottom: 1px solid #959595
+                padding: 23px
+            .spec-container
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
+                padding: 35px 0px
+                height: auto
+            .spec
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                min-width: 175px
+                min-height: 120px
+                margin: 28px
+                flex-grow: 1
+                flex-basis: 0
+                .item-value
+                    color: #FFFFFF
+                    font-size: 68px
+                    font-weight: 600
+                    line-height: 43px
+                    text-align: center
+                    margin: 9px
+                .item-value-sm
+                    font-size: 50px
+                .item-label
+                    color: #FFFFFF
+                    font-size: 17px
+                    font-weight: 600
+                    line-height: 25px
+                    text-align: center
+                    margin: 9px
+                .spec-icon
+                    filter: invert(1)
+            .richspec
+                margin: 0px
+                .richspec-container
+                    display: flex
+                    flex-direction: row
+                    max-width: 852px
+                    flex-wrap: wrap
+                    p
+                        flex-basis: 0
+                        flex-grow: 1
+                        min-width: 171px
+                        line-height: 22px
+                        margin: 12px 20px
+                        max-width: 247px
+@media (max-width: $sm-bp)
+    #machineDetailsTabContent
+        #product-specs
+            .specs-container
+                padding: 35px 0px
+                .quicklook-header
+                    text-align: center
+                .spec-container
+                    padding: 35px 0px
+                    .spec
+                        margin: 18px
+                    .richspec
+                        margin: 10px
+                        justify-content: flex-start
+                        .richspec-container
+                            text-align: left
+                            justify-content: center
+                            p
+                                margin-bottom: 10px
+                                text-align: left
+                .sw-container
+                    flex-direction: column
+                    .mobile-spec
+                        min-height: auto
+                        flex-direction: row
+                        justify-content: flex-start
+                        .item-label
+                            flex-basis: 0
+                            -webkit-box-flex: 1
+                            flex-grow: 1
+                            min-width: 171px
+                            line-height: 22px
+                            max-width: 247px
+                            text-align: left
+                            margin: 0 auto

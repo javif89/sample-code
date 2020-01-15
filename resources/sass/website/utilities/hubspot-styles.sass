@@ -1,0 +1,144 @@
+#hubspot-form
+    fieldset
+        margin: 15px 0px
+        width: 100%
+        max-width: 100%
+        .hs_firstname
+            float: left
+        .hs_lastname
+            float: right
+        .hs_email
+            float: left
+        .hs_phone
+            float: right
+    [data-reactid=".hbspt-forms-0.1:$6"], [data-reactid=".hbspt-forms-0.1:$7"], [data-reactid=".hbspt-forms-0.1:$8"], [data-reactid=".hbspt-forms-0.1:$9"]
+        display: none
+    input:-internal-autofill-selected
+        background-color: #FFFFFF !important
+    .hs-input
+        box-sizing: border-box
+        height: 61px
+        width: 100%
+        border: 1px solid #000000
+        border-radius: 4px
+        padding: 19px 15px
+        background: #FFFFFF
+        max-width: 100%
+        font-size: 16px
+        color: #000000
+        &:focus
+            border: 1px solid #F17D21
+            -webkit-box-shadow: none
+            -moz-box-shadow: none
+            box-shadow: none
+        fieldset + label
+            color: #F17D21
+    .hs-error-msg
+        color: #000000
+        margin: -18px 8px
+    .hs-fieldtype-select
+        select
+            font-size: 16px
+            color: #000000
+            padding: 19px 15px
+    .hs-fieldtype-textarea
+        .input
+            textarea
+                height: 210px
+                &::placeholder  /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: #A0A2A6
+                    font-size: 16px
+                    font-style: italic
+                    line-height: 22px
+                    opacity: 1
+                    font-weight: 300
+                :-ms-input-placeholder /* Internet Explorer 10-11 */
+                    color: #A0A2A6
+                    font-size: 16px
+                    font-style: italic
+                    line-height: 22px
+                ::-ms-input-placeholder /* Microsoft Edge */
+                    color: #A0A2A6
+                    font-size: 16px
+                    font-style: italic
+                    line-height: 22px
+    label
+        color: #000000
+        font-size: 12px
+        font-weight: 600
+        line-height: 31px
+        position: absolute
+        margin-left: 13.5px
+        margin-top: -13.5px
+        background: #FFFFFF
+        padding: 0px 1px 0px 3px
+        .hs-form-required
+            color: #000000
+    input
+        box-sizing: border-box
+        height: 61px
+        width: 267px
+        border: 1px solid #000000
+        border-radius: 4px
+        padding: 19px 12px
+        &::placeholder  /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #A0A2A6
+            font-size: 16px
+            font-style: italic
+            line-height: 22px
+            opacity: 1
+            font-weight: 300
+        :-ms-input-placeholder /* Internet Explorer 10-11 */
+            color: #A0A2A6
+            font-size: 16px
+            font-style: italic
+            line-height: 22px
+        ::-ms-input-placeholder /* Microsoft Edge */
+            color: #A0A2A6
+            font-size: 16px
+            font-style: italic
+            line-height: 22px
+    .hs_submit
+        .actions
+            padding: 0px 20px 0px 20px
+            margin-top: 0px
+            margin-bottom: 0px
+        input
+            height: 60px
+            width: 100%
+            border-radius: 30px
+            background: linear-gradient(90deg, #FF7200 0%, #FC9500 100%)
+            color: #FFFFFF
+            font-family: "Open Sans"
+            font-size: 14px
+            font-weight: bold
+            line-height: 30px
+            text-align: center
+            display: flex
+            align-items: center
+            justify-content: center
+            border: none
+            padding: 0px
+            text-shadow: none
+            &:hover
+                background: linear-gradient(90deg, #EB6B04 0%, #E88900 100%)
+                box-shadow: 0px 0px 6px 1px #813B00
+.support-form // tech-support
+    .field
+        margin-bottom: 18px
+    [data-reactid=".hbspt-forms-1.1:$6"], [data-reactid=".hbspt-forms-1.1:$7"], [data-reactid=".hbspt-forms-1.1:$8"], [data-reactid=".hbspt-forms-1.1:$9"]
+        display: none
+    ul.no-list.hs-error-msgs.inputs-list
+        list-style-type: none
+    .hs_submit
+        .actions
+            padding: 0 !important
+            margin-top: 30px !important
+
+@media (max-width: $lg-bp)
+    fieldset
+        .hs-form-field
+            width: 100% !important
+        .hs-fieldtype-select
+            select
+                padding: 19px 6px !important

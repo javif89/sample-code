@@ -1,0 +1,8 @@
+.bg-gradient-primary {
+    background: linear-gradient(87deg, #FC9500 0, #FF7200 100%) !important;
+}
+
+#sidenav-collapse-main::before {
+    content: none !important;
+    display: none !important;
+}

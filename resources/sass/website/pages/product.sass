@@ -1,0 +1,721 @@
++keyframes(needleAnim)
+    from
+        -webkit-transform: translateY(-20px)
+    to
+        -webkit-transform: translateY(20px)
+
+.product_wrapper
+    .small_title
+        color: #F17D21
+        font-size: 15px
+        font-weight: 800
+        letter-spacing: 2.2px
+        line-height: 32px
+        text-transform: uppercase
+    .accessories
+        background: url('/images/machine-dark-bg.png') no-repeat center center
+        background-size: cover
+
+
+
+#machineDetailsTab
+    width: 100%
+
+    .nav-item
+        width: calc(100% / 3)
+        text-align: center
+        background: #131313
+        border-radius: 0
+        border: none
+        height: 91px
+
+        .nav-link
+            display: flex
+            height: 100%
+            align-items: center
+            justify-content: center
+            color: #959595
+            font-size: 21px
+            font-weight: $bold
+            border: none
+            border-bottom: 3px solid #131313
+            &.active
+                background: #131313
+                border-radius: 0
+                border: none
+                color: #FFFFFF
+                border-bottom: 3px solid white
+
+.product_wrapper.tc_wrapper
+    h3
+        font-size: 24px
+    .subtitle
+        //color: #FFFFFF
+        font-size: 36px
+        font-weight: $bold
+        line-height: 52px
+
+    .section_text
+        color: #474747
+        font-size: 16px
+        font-weight: $regular
+        line-height: 30px
+
+    .hero_wrapper
+        background: linear-gradient(90.69deg, #000000 0%, #29166B 100%)
+        margin-bottom: 2px
+        margin-left: -15px
+        margin-right: -15px
+
+        .hero_img
+            max-width: 493px
+            width: 100%
+
+        .hero_header, .hero_header_body, .hero_footer
+            color: white
+            width: 100%
+
+        .category
+            font-size: 20px
+            line-height: 31px
+
+        h1
+            font-size: 55px
+            font-weight: $bold
+            line-height: 48px
+
+        .border_break
+            height: 1px
+            width: 100%
+            background-color: rgba(230, 230, 231, 0.17)
+            margin: 13px auto 20px
+
+        .hero_header_body
+            p
+                font-size: 16px
+                line-height: 30px
+
+        .hero_footer
+            .border_break
+                margin: 39px auto 13px
+
+            .light_purple_text
+                font-size: 12px
+                font-weight: $bold
+                text-transform: uppercase
+                line-height: 30px
+
+            .icons_wrapper
+                float: right
+                display: flex
+                justify-content: center
+                align-items: center
+
+                .icons_container
+                    border-radius: 50%
+                    background-color: #282045
+                    height: 31px
+                    width: 31px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+
+                .icons_container:not(:last-child)
+                    margin-right: 20px
+
+    .section_2
+        .background
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            position: relative
+
+            .play-button
+                display: flex
+                flex-direction: column
+                align-items: center
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                margin: auto
+                width: fit-content
+                height: fit-content
+                text-align: center
+                transition: transform 0.3s linear
+
+                &:hover
+                    transform: scale(0.9)
+
+            span
+                color: white
+                padding-top: 1rem
+                font-size: 18px
+                letter-spacing: 2.25px
+                line-height: 30px
+                text-transform: uppercase
+                font-weight: $semibold
+
+
+        .background:nth-child(1)
+
+        .background:nth-child(2)
+            margin-left: 2px
+
+        .play_icon
+            &:hover
+                cursor: pointer
+
+    .section_3, .section_5
+        padding: 3rem 0
+
+    .section_4
+        .photo_gallery
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-template-rows: repeat(4, 18vw)
+            grid-gap: 2px
+
+            img
+                width: 100%
+                height: 100%
+
+            figure
+                width: 100%
+                height: 100%
+                object-fit: cover
+                position: relative
+
+                figcaption
+                    color: #FFFFFF
+                    font-size: 21px
+                    font-weight: 800
+                    position: absolute
+                    left: 15px
+                    bottom: 25px
+
+            figure:nth-child(1)
+                grid-column-start: 1
+                grid-column-end: 3
+                grid-row-start: 1
+                grid-row-end: 3
+
+            figure:nth-child(3)
+                grid-row-start: 2
+                grid-row-end: 4
+
+    .section_8
+        height: 573px
+
+        img
+            position: absolute
+            right: 0
+            bottom: 0
+
+    .section_9, .section_10
+        margin-bottom: 2px
+
+    .section_9, .section_10, .section_12
+        background-image: url("/images/financing-bg.png")
+        background-size: cover
+        background-position: right
+        height: 731px
+        overflow: hidden
+
+    .machine_needle
+        -webkit-animation: needleAnim 200ms infinite
+        animation: needleAnim 200ms infinite
+        animation-direction: alternate
+        animation-fill-mode: both
+
+    .section_13
+        .hobby_business_bg
+            background-image: url("/images/Machine_Pages/hobby_business/pattern_bg.png")
+            background-size: cover
+            background-repeat: no-repeat
+            padding: 79px
+
+        .tc_customers_bg
+            background: linear-gradient(90.69deg, #000000 0%, #29166B 100%)
+            color: white !important
+            height: 500px
+            padding: 3rem 25% 3rem 4rem
+            display: flex
+            justify-content: center
+            align-items: flex-start
+            flex-flow: column
+
+        .hobby_business
+            .title
+                color: #000000
+                font-size: 20px
+                font-weight: $semibold
+            .body
+                color: #000000
+                font-size: 16px
+                line-height: 30px
+#faq-section
+    background-color: black
+    color: white
+    margin-left: -15px
+    margin-right: -15px
+    .card
+        background-color: transparent
+        border: none
+    .card-header
+        background-color: transparent
+        border: none
+        padding: 0
+        display: flex
+        justify-content: flex-start
+        align-items: stretch
+        font-size: 26px
+        font-weight: bold
+        cursor: pointer
+
+        .plus-button
+            background-color: white !important
+            color: black
+            padding: 15px
+            margin-right: 0
+            border-bottom: 4px solid black
+            display: flex
+            align-items: center
+        i
+            float: left
+        span
+            display: block
+            overflow: hidden
+            border: 4px solid white
+            border-left: none
+            width: 100%
+            padding: 10px
+    .card-header:not(.collapsed)
+            background-color: white
+            color: black
+            .plus-button
+                border-bottom-color: white
+    .collapse
+        background-color: white
+        color: black
+    .card:last-child
+        .plus-button
+            border-bottom: none
+.accessories
+    .additional-accessories
+        .accessory
+            width: 20%
+        .accessory:first-child
+            margin-left: 0 !important
+        .accessory:last-child
+            margin-right: 0 !important
+
+// EM-1010 PAGE
+.em-1010-wrapper
+    .hero_wrapper
+        background: url('/images/Spec Background.png') !important
+        .hero-prod-name
+            color: #000000 !important
+        .category
+            color: #000000
+        .hero_header_body
+            p
+                color: #000000 !important
+            .btn-container
+                .transparent_btn
+                    background-color: #EEEEEE !important
+                    color: #474747 !important
+                    font-weight: 600 !important
+        .hero_footer
+            .border_break
+                background-color:#C5C5C5 !important
+            .light_purple_text
+                color: #C5C5C5 !important
+            .icons_container
+                background-color: #C5C5C5 !important
+    #machineDetailsTab
+        .nav-item
+            background-color: #F6F6F6 !important
+            .nav-link
+                &.active
+                    background-color: #F6F6F6 !important
+                    color: #000000 !important
+                    border-bottom: 3px solid #000000 !important
+    #machineDetailsTabContent
+        .tab-pane
+            background: url('/images/Spec Background.png') !important
+        .description_container
+            .tab_title
+                color: #000000 !important
+            p
+                color: #000000 !important
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen and (max-width: 1024px) and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5)
+    .product_wrapper.tc_wrapper
+        .hero_wrapper
+            .container
+                max-width: 95%
+        .heading
+            font-size: 42px
+            line-height: 52px
+        .section_8
+            height: auto
+            img
+                position: static
+            .position-relative
+                padding: 0
+            .col-lg-6.text-white
+                padding: 17px !important
+        .section_9
+            background: black
+            height: auto
+            padding-top: 40px !important
+
+            .col-12.d-lg-none
+                display: block !important
+                height: 400px
+                margin-bottom: -30px
+                margin-left: -30px
+                
+            .col-xl-5.d-flex
+                text-align: center !important
+                height: auto
+                margin-bottom: 110px
+                padding: 20px 100px !important
+                .btn
+                    margin: auto !important
+
+        .section_10
+            height: auto
+            background: black
+            padding-top: 40px !important
+
+            .col-xl-6
+                height: 250px
+                margin: auto
+                margin-top: 90px
+                display: flex
+                align-items: center
+
+        .subtitle
+            font-size: 30px
+            line-height: 40px
+
+        .section_12
+            height: auto
+            padding-top: 40px !important
+
+            .col-xl-6.d-lg-none
+                height: 520px
+                margin-top: 20px
+                margin-bottom: -30px
+                display: block !important
+            .col-xl-6.d-none.d-lg-block
+                display: none !important
+            .col-xl-5
+                padding: 20px 100px !important
+        .section_13
+            .hobby_business_bg
+                width: 95%
+            .tc_customers_bg
+                height: auto
+                padding: 30px 40px
+                margin: 20px
+                margin-top: 0
+                margin-bottom: -30px
+            .social-proof-collage
+                .row
+                    .col-lg-10
+                        padding-right: 0
+                .collage
+                    overflow: scroll
+                    img
+                        max-width: 180%
+        .accessories
+            .additional-accessories
+                padding-right: -15px
+                .accessory
+                    max-width: 50%
+                    width: 50%
+                    margin-bottom: 10px
+                    margin-right: 15px
+        #faq-section
+            .container
+                max-width: 95%
+
+@media (max-width: 769px)
+    .product_wrapper.tc_wrapper
+        .hero_wrapper
+            background: linear-gradient(to bottom, #000000 0%, #29166B 100%)
+            .category
+                font-size: 25px !important
+                padding: 0 10px
+        .heading
+            font-size: 42px
+            line-height: 52px
+        .section_8
+            height: auto
+            img
+                position: static
+            .position-relative
+                padding: 0
+        .section_9
+            background: black
+            height: auto
+            padding-top: 40px !important
+
+            .col-12.d-lg-none
+                height: 680px
+                margin-bottom: -30px
+                margin-left: -30px
+        .section_10
+            height: auto
+            background: black
+            padding-top: 40px !important
+
+            .col-xl-6
+                height: 480px
+                margin-top: 30px
+
+        .subtitle
+            font-size: 30px
+            line-height: 40px
+
+        .section_12
+            height: auto
+            padding-top: 40px !important
+
+            .col-xl-6.d-lg-none
+                height: 520px
+                margin-top: 20px
+                margin-bottom: -30px
+        .section_13
+            .hobby_business_bg
+                margin: 30px
+                padding: 40px
+            .tc_customers_bg
+                height: auto
+                padding: 30px 40px
+                margin: 20px
+                margin-top: 0
+                margin-bottom: -30px
+            .social-proof-collage
+                .row
+                    .col-lg-10
+                        padding-right: 0
+                .collage
+                    overflow: scroll
+                    img
+                        max-width: 180%
+        .accessories
+            .additional-accessories
+                padding-right: -15px
+                .accessory
+                    max-width: 50%
+                    width: 50%
+                    margin-bottom: 10px
+                    margin-right: 15px
+
+                    p.lead
+                        font-weight: bold
+                        font-size: 20px
+
+@media (max-width: 480px)
+    .product_wrapper.tc_wrapper
+        .accessories
+            .additional-accessories
+                .accessory
+                    max-width: 100%
+                    width: 100%
+                    margin-bottom: 10px
+
+        .section_13
+            padding: 0
+
+            .hobby_business_bg
+                padding: 15px
+                margin: 0
+
+                .bg-white
+                    padding: 10px
+
+                .hobby_business
+                    text-align: left
+                    .title
+                .section-title
+                    font-size: 30px
+                    line-height: 40px
+
+            .tc_customers_bg
+                height: auto
+                padding: 10px
+                margin: 5px
+                margin-top: 0
+                margin-bottom: -10px
+
+            .social-proof-collage
+                margin-top: 30px
+
+                .collage
+                    overflow: scroll
+                    img
+                        max-width: 257%
+        .btn
+            margin: auto
+            width: 80%
+    .product_wrapper.tc_wrapper
+        .hero_wrapper
+            padding: 2.25rem 0
+            h1
+                font-size: 30px
+                margin-bottom: 0
+        .section_4
+            .photo_gallery
+                display: grid
+                grid-template-columns: repeat(4, 1fr)
+                grid-template-rows: repeat(12, 18vw)
+                grid-gap: 2px
+                margin-bottom: 15px
+
+                img
+
+                figure
+                    display: none
+                    figcaption
+                        left: 5px
+                        bottom: 5px
+                        font-size: 17px
+
+                figure:nth-child(1)
+                    display: block
+                    grid-column-start: 1
+                    grid-column-end: 5
+                    grid-row-start: 1
+                    grid-row-end: 4
+
+                figure:nth-child(4)
+                    display: block
+                    grid-column-start: 1
+                    grid-column-end: 3
+                    grid-row-start: 4
+                    grid-row-end: 6
+
+                figure:nth-child(5)
+                    display: block
+                    grid-column-start: 3
+                    grid-column-end: 5
+                    grid-row-start: 4
+                    grid-row-end: 6
+                    
+                figure:nth-child(6)
+                    display: block
+                    grid-column-start: 1
+                    grid-column-end: 3
+                    grid-row-start: 6
+                    grid-row-end: 8
+                    
+                figure:nth-child(7)
+                    display: block
+                    grid-column-start: 3
+                    grid-column-end: 5
+                    grid-row-start: 6
+                    grid-row-end: 8
+
+                figure:nth-child(2)
+                    display: block
+                    grid-column-start: 1
+                    grid-column-end: 5
+                    grid-row-start: 8
+                    grid-row-end: 11
+
+                figure:nth-child(3)
+                    display: block
+                    grid-column-start: 1
+                    grid-column-end: 3
+                    grid-row-start: 11
+                    grid-row-end: 13
+                    overflow: hidden
+
+                    img
+                        width: initial
+                        height: initial
+                        object-fit: cover
+
+                figure:nth-child(8)
+                    display: block
+                    grid-column-start: 3
+                    grid-column-end: 5
+                    grid-row-start: 11
+                    grid-row-end: 13
+        .section_2
+            .background
+
+                .play-button
+                    .play_icon
+                        height: 90px
+                        width: 90px
+
+                    &:hover
+                        transform: scale(0.9)
+        .section_5
+            padding: 0
+
+        .section_9
+            background: black
+            height: auto
+
+            .col-12.d-lg-none
+                height: 400px
+                margin-bottom: -30px
+                margin-left: -30px
+
+        .section_10
+            height: auto
+            background: black
+
+            .col-xl-6
+                height: 250px
+                margin-top: 10px
+
+        .subtitle
+            font-size: 30px
+            line-height: 40px
+
+        .section_12
+            height: auto
+
+            .col-xl-6.d-lg-none
+                height: 300px
+                margin-top: 20px
+                margin-bottom: -30px
+    #faq-section
+        h3
+            font-size: 30px
+            line-height: 40px
+        .card-header
+            font-size: 18px
+    #related-products
+        .product-container
+            overflow: scroll
+            margin-right: -15px
+            .row
+                width: 280%
+    #machineDetailsTab
+        width: 100%
+
+        .nav-item
+
+            .nav-link
+                font-size: 14px
+                padding: 0
+
+                &.active
+    #machineDetailsTabContent
+        .machine_tab_wrapper
+            max-width: 100%
+            .description_container
+                text-align: left !important
+                padding: 10px
+            

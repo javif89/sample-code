@@ -1,0 +1,419 @@
+#tradeshows-container,#events-container
+    padding: 0px
+    font-family: "Open Sans"
+    .hero_wrapper
+        width: 100%
+        background-size: cover
+        display: flex
+        flex-direction: column
+        padding: 106px 76px
+        .hero_header
+            color: #FFFFFF
+            font-size: 55px
+            font-weight: 800
+            line-height: 72px
+            margin-bottom: 6px
+        .hero_subheader
+            color: #FFFFFF
+            font-size: 20px
+            line-height: 31px
+            width: 421px
+            margin-top: 6px
+    .region-select-container
+        height: 91px
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        .region
+            a
+                color: #959595
+                font-size: 21px
+                font-weight: 800
+                line-height: 43px
+                text-align: center
+            .active-line
+                width: 41px
+                height: 6px
+                margin: 0 auto
+        .active-region
+            a
+                color: #000000
+                .active-line
+                    height: 6px
+                    width: 41px
+                    border-radius: 3px
+                    background-color: #F17D21
+                    margin: 0 auto
+        .divider
+            box-sizing: border-box
+            height: 41px
+            width: 1px
+            border: 1px solid #DFDDDD
+    .mobile-region-selector
+        display: none
+    .regions-container
+        width: 100%
+        padding: 61px 60px
+        display: flex
+        flex-direction: column
+        background-color: #FAFAFA
+        .region-container
+            display: flex
+            flex-direction: column
+            width: 100%
+            .region-header
+                color: #000000
+                font-size: 36px
+                font-weight: 800
+                line-height: 52px
+            .show-container,.event-container
+                border-radius: 4px
+                background-color: #FFFFFF
+                border: none
+                .show-img-container
+                    position: relative
+                    .main-img
+                        width: 100%
+                        height: 235px
+                    .promo-available
+                        position: absolute
+                        top: 10px
+                        right: 10px
+                        box-sizing: border-box
+                        height: 29px
+                        width: 115px
+                        border: 1px solid #3D2099
+                        border-radius: 4px
+                        background-color: #E7E1FF
+                        color: #3C2099
+                        font-size: 10px
+                        font-weight: bold
+                        line-height: 25px
+                        text-align: center
+                .show-info-body
+                    height: 100%
+                    padding: 20px 18px
+                    display: flex
+                    flex-direction: column
+                    position: relative
+                .show-info-body > *
+                    margin: 4px 0px
+                .show-header
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    .short-date
+                        flex-direction: column
+                        .date-number
+                            color: #000000
+                            font-size: 30px
+                            font-weight: bold
+                            line-height: 25px
+                            text-align: center
+                        .date-month
+                            color: #474747
+                            font-size: 18px
+                            font-weight: 600
+                            line-height: 25px
+                            text-align: center
+                    .show-name
+                        color: #000000
+                        font-size: 21px
+                        font-weight: 800
+                        line-height: 32px
+                        margin: 0px 0px 0px 26px
+                    .small-text
+                        font-size: 19px
+                .date-range
+                    color: #000000
+                    font-size: 16px
+                    line-height: 25px
+                .location-container
+                    width: 100%
+                    display: flex
+                    flex-direction: column
+                    .location-name
+                        color: #000000
+                        font-size: 16px
+                        font-weight: bold
+                        line-height: 25px
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        .location
+                            margin: 0px 8px
+                .location-container > *
+                    margin: 4px 0px
+                .booth-info
+                    color: #000000
+                    font-size: 16px
+                    line-height: 25px
+                .event-url
+                    color: #000000
+                    font-size: 16px
+                    font-weight: 700
+                    line-height: 30px
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    margin-bottom: 5px
+                    .link-name
+                        text-decoration: underline
+                    .fa-external-link-alt
+                        margin: 0px 7px
+                .share-btn
+                    cursor: pointer
+                .share-toggle
+                    height: 36.9px
+                    width: 81px
+                    border-radius: 18.45px
+                    background-color: #F9F9F9
+                    color: #000000
+                    font-size: 11px
+                    font-weight: bold
+                    line-height: 30px
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    justify-content: center
+                    margin: 13px 0px
+                    .fa-share-alt
+                        margin-left: 5px
+                .share-links
+                    height: 36.9px
+                    width: 230px
+                    border-radius: 18.45px
+                    background-color: #000000
+                    font-size: 11px
+                    font-weight: bold
+                    line-height: 30px
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    justify-content: space-around
+                    padding: 0px 5px
+                    .share-btn
+                        font-size: 12px
+                .share-links > *
+                    font-size: 20px
+                    color: #FFFFFF
+                    cursor: pointer
+                .tradeshow-btn-link
+                    box-sizing: border-box
+                    padding: 15px 0
+                    border: 1px solid #F17D21
+                    border-radius: 4px
+                    color: #F17D21
+                    font-size: 14px
+                    font-weight: bold
+                    line-height: 30px
+                    text-align: center
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    margin-top: auto
+            .event-container
+                height: auto
+                width: 100%
+                max-width: 1300px
+                margin: auto
+                display: flex
+
+                .event-image
+                    flex: 1
+                .show-info-body
+                    flex: 2
+                    padding: 15px 40px
+
+                    .event-name
+                        font-size: 26px
+                        font-weight: bold
+                        text-transform: uppercase
+                    .tradeshow-btn-link
+                        width: auto
+                        height: auto
+                        padding: 15px 60px
+                        position: static
+                        display: block
+                        margin-bottom: initial
+                    .event-url
+                        margin: auto
+                        margin-bottom: auto
+                .event-date
+                    flex: 1
+                    background-color: black
+                    color: white
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+
+                    .date-number
+                        font-size: 55px
+                        font-weight: bold
+                        line-height: 50px
+                    .date-month
+                        font-size: 31px
+                        font-weight: 600
+                    .date-range
+                        color: white
+                        font-size: 16px
+                        margin-top: 20px
+#tradeshows-container
+    .hero_wrapper
+        background-image: url('../images/Events/tradeshow-hero.jpg')
+
+#events-container
+    .hero_wrapper
+        background-image: url('../images/Events/events-hero.jpg')
+
+@media (max-width: $xl-bp)
+    #tradeshows-container
+        .region-select-container
+            display: flex
+            .region
+                a
+                    font-size: 1.5vw
+@media (max-width: $lg-bp)
+    #tradeshows-container,#events-container
+        overflow: hidden
+        .hero_wrapper
+            padding: 33px
+            padding: 94px 28px
+            .hero_header
+                font-size: 42px
+                font-weight: 800
+                line-height: 72px
+            .hero_subheader
+                font-size: 20px
+                line-height: 31px
+        .region-select-container
+            display: flex
+            .region
+                text-align: center
+                a
+                    font-size: 1.5vw
+                    font-weight: 800
+                    line-height: 43px
+                    text-align: center
+        .regions-container
+            padding: 64px 19px
+        .region-container
+            .region-header
+                font-size: 28px !important
+                font-weight: 800
+                line-height: 52px
+                padding: 0px 12px 19px !important
+            .shows-container
+                .show-container
+                    .show-info-body
+                        padding: 20px 14px !important
+                        .tradeshow-btn-link
+                            width: 310px
+            .event-container
+                max-width: 100%
+                flex-direction: column
+
+                .event-date
+                    flex: 0.5 !important
+                    text-align: center
+
+
+@media (max-width: $sm-bp)
+    #tradeshows-container,#events-container
+        .hero_wrapper
+            padding: 33px 15px
+            .hero_header
+                font-size: 30px
+                text-align: center
+                line-height: 40px
+            .hero_subheader
+                width: auto
+                font-size: 20px
+                line-height: 31px
+                text-align: center
+        .dropdown-toggle:after
+            margin: 18px
+            border-top: 0.5em solid
+        .region-select-container
+            display: none
+        .mobile-region-selector
+            display: block
+        .region-dropdown
+            // cursor: pointer
+            box-sizing: border-box
+            height: 51px
+            border: 1px solid #E7E9EB
+            border-radius: 4px
+            background-color: #FFFFFF
+            display: flex
+            align-items: center
+            // padding: 0px
+            .region-select
+                margin: 0 auto
+                font-size: 18px
+                font-weight: 800
+                line-height: 43px
+            .line
+                box-sizing: border-box
+                height: 36.5px
+                width: 1px
+                border: 1px solid #E7E9EB
+            .dropdown-menu.show
+                width: 100%
+                display: flex
+                flex-direction: column
+                padding: 18px
+                .dropdown-menu
+                    .region-item
+                        color: #000000 !important
+                        font-size: 14px
+                        font-weight: 800 !important
+                        line-height: 30px
+        .regions-container
+            padding: 33px 18px
+            .region-container
+                .region-header
+                    font-size: 23px !important
+                    font-weight: 800
+                    line-height: 32px
+                .shows-container
+                    .show-container
+                        margin: 10px 0px !important
+                        .show-info-body
+                            padding: 12px 10px !important
+                            .location-container
+                                .location-name
+                                    font-size: 15px
+                            .tradeshow-btn-link
+                                margin: auto auto 0
+                                width: 100%
+                .event-container
+                    .event-date
+                        .date-number
+                            font-size: 49px
+                            font-weight: bold
+                            line-height: 50px
+                        .date-month
+                            font-size: 25px
+                            font-weight: 600
+                        .date-range
+                            color: white
+                            font-size: 12px
+                            margin-top: 5px
+                            line-height: 17px
+                    .show-info-body
+                        padding: 20px 15px
+                        .tradeshow-btn-link
+                            width: 100%
+                            padding: 15px 0
+                        .event-links
+                            flex-direction: column-reverse
+                            align-items: flex-start
+                        .event-url
+                            margin-left: 0
+                            margin-bottom: 20px
+
+            

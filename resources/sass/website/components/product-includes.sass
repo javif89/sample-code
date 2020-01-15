@@ -1,0 +1,87 @@
+// EM-1010 styles
+.em-1010-wrapper
+    #product-includes
+        .content-container
+            h1
+                color: #000000 !important
+            p
+                color: #000000 !important
+#machineDetailsTabContent
+    #product-includes
+        width: 100%
+        // max-height: 708px
+        display: flex
+        flex-direction: row
+        padding: 150px 0
+        .images-container
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-wrap: wrap
+            .panel_descriptor_btn
+                transition: opacity .5s ease-in-out 1.5s
+                opacity: 1
+                &.selected
+                    transition: box-shadow 0.25s ease-in-out 0s, height 100ms ease-in-out 0s, width 100ms ease-in-out 0s, opacity .5s ease-in-out 1.5s
+            .panel_descriptor_btn
+                cursor: pointer
+                height: 22px
+                width: 22px
+                background: #3C2099
+                border: 1px solid white
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+                color: white
+                font-size: 16px
+                position: absolute
+                opacity: 1
+                z-index: 1
+                transition: opacity .5s ease-in-out
+                font-weight: 600
+                transform-origin: center
+                align-self: flex-start
+
+                &.selected
+                    height: 32px
+                    width: 32px
+                    background: white
+                    color: #3C2099
+                    transform-origin: center
+                    box-shadow: 0 0 7px 3px rgba(60, 32, 153, 0.77), 0 0 10px 3px rgba(60, 32, 153, 0.56), 0 0 4px 3px #C4BEDF
+                    transition: box-shadow 0.15s ease-in-out 0s, height 50ms ease-in-out 0s, width 50ms ease-in-out 0s, opacity .5s ease-in-out
+                    font-size: 22px
+            .img_container
+                width: 30%
+                height: auto
+                margin: 10px
+                opacity: 0.3
+                display: flex
+                align-items: center
+                &.selected
+                    opacity: 1
+        .content-container
+            h1
+                color: #FFFFFF
+                font-size: 26px
+                font-weight: $bold
+                line-height: 38px
+            p
+                color: #FFFFFF
+                font-size: 16px
+                line-height: 30px
+
+@media (max-width: 768px)
+    #machineDetailsTabContent
+        #product-includes
+            padding: 70px 0
+            .content-container
+                padding-top: 30px
+@media (max-width: 480px)
+    #machineDetailsTabContent
+        #product-includes
+            padding: 70px 0
+            .images-container
+                .img_container
+                    margin: 5px

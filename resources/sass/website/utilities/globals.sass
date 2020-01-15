@@ -1,0 +1,241 @@
+.light_grey_bg
+    background: $light_grey_bg !important
+
+.dark_grey_bg
+    background: $dark_grey_bg !important
+
+.black_bg
+    background: $black_bg !important
+
+.orange_text
+    color: $orange !important
+
+.light_purple_text
+    color: #4E476D !important
+
+body
+    overflow-x: hidden
+
+    .btn, .nav-link
+        &:focus
+            outline: none
+            box-shadow: none
+
+    *
+        font-family: $open_sans
+
+    p, spans, section
+        font-size: 16px
+        line-height: 30px
+        word-break: break-word
+
+    h1, h2, h3, h4
+        font-weight: $bold
+
+    h1
+        font-size: 55px
+        line-height: 72px
+
+    h2
+        font-size: 55px
+        ine-height: 72px
+
+    h3
+        font-size: 36px
+        line-height: 52px
+
+    h4
+        font-size: 21px
+        line-height: 43px
+
+    a
+        color: #0083EA
+        font-size: 14px
+        font-weight: $bold
+        line-height: 30px
+
+        span
+            color: #0083EA
+            font-size: 14px
+            font-weight: $bold
+            line-height: 30px
+
+@media (min-width: $xl-bp)
+    .container
+        max-width: 1440px !important
+
+@media (max-width: $xl-bp)
+    body
+        h1
+            font-size: 42px
+            line-height: 52px
+
+        h2
+            font-size: 42px
+            line-height: 52px
+
+        h3
+            font-size: 30px
+            line-height: 42px
+
+        h4
+            font-size: 16px
+            line-height: 26px
+
+@media (min-width: $sm-bp)
+    .container
+        max-width: 680px
+
+@media (max-width: $sm-bp)
+    body
+        h1
+            font-size: 30px
+            line-height: 40px
+
+        h2
+            font-size: 30px
+            line-height: 40px
+
+        h3
+            font-size: 22px
+            line-height: 32px
+
+.circular_ambiance_bg
+    background: linear-gradient(90deg, #FF7200 0%, #FC9500 100%)
+    position: relative
+    overflow: hidden
+
+    .circle
+        border-radius: 50%
+        display: inline-block
+        position: absolute
+
+    .bg-1
+        height: 850px
+        width: 850px
+        background-color: #FC9100
+        top: -550px
+        left: -550px
+        animation: circleMotion1 14s infinite
+        animation-timing-function: ease-in
+
+    .bg-1-border
+        border: 2px solid #FA6101
+        height: 850px
+        width: 850px
+        background: transparent
+        top: -510px
+        left: -550px
+
+    .bg-2
+        height: 575px
+        width: 575px
+        background-color: #FE5600
+        opacity: 0.5
+        top: -400px
+        left: 100px
+        animation: circleMotion1 20s infinite
+
+    .bg-2-border
+        border: 2px solid #FA6101
+        height: 575px
+        width: 575px
+        background: transparent
+        top: -380px
+        left: 100px
+
+    .bg-3
+        height: 375px
+        width: 375px
+        background-color: #FE5600
+        opacity: 0.5
+        top: -210px
+        right: -130px
+        animation: circleMotion2 9s infinite
+        animation-timing-function: ease-in
+
+    .bg-3-border
+        border: 2px solid #FA6101
+        height: 390px
+        width: 390px
+        background: transparent
+        top: -185px
+        right: -130px
+
+    .bg-4
+        height: 375px
+        width: 375px
+        background-color: #FF9B13
+        opacity: 0.5
+        top: -270px
+        right: 300px
+        animation: circleMotion1 9s infinite
+        animation-timing-function: ease-in
+
+    .bg-4-border
+        border: 2px solid #FA6101
+        height: 390px
+        width: 390px
+        background: transparent
+        top: -245px
+        right: 300px
+    .content
+        z-index: 1000
+
+.verticenter
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.square
+    width: 100%
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+
+.square:after
+    content: ""
+    display: block
+    padding-bottom: 100%
+
+.square-16by9
+    width: 100%
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+
+.square-16by9:after
+    content: ""
+    display: block
+    padding-bottom: 56.25%
+
+.ricoma-ul
+    list-style: none
+
+.ricoma-ul li::before
+    content: "\25A0"
+    color: $color-primary
+    font-weight: bold
+    display: inline-block
+    width: 1em
+    margin-left: -1em
+
+.play-btn
+    background-color: $color-primary
+    border: none
+    outline: none
+    color: white
+    height: 120px
+    width: 120px
+    font-size: 40px
+    display: flex
+    flex-direction: columns
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    transition: transform 0.3s linear
+
+    .fa-play
+        margin-left: 10px
+.play-btn:hover
+    transform: scale(1.2)

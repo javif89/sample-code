@@ -1,0 +1,67 @@
+#press
+    background-color: #FAFAFA
+    h1
+        font-size: 55px
+        font-weight: 800
+        line-height: 65px
+    h2
+        font-size: 36px
+        font-weight: 800
+        line-height: 52px
+    .hero
+        padding: 100px 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        color: white
+        background-image: url('/images/press/hero-desktop.png')
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
+    .press-card
+        .logo
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            height: 160px
+            background-color: black
+            img
+                max-height: 100px
+                width: auto
+        .date
+            color: #474747
+            font-size: 13px
+            font-weight: 600
+            line-height: 32px
+            text-transform: uppercase
+        .title
+            color: #000000
+            font-size: 21px
+            font-weight: 800
+        .body
+            margin: 60px 0
+        .link
+            border: 1px solid $color-primary
+            color: $color-primary
+            text-transform: uppercase
+            font-weight: 600
+            text-align: center
+            width: 100%
+            padding: 15px
+
+@media (max-width: 768px)
+    #press
+        .hero
+            background-image: url('/images/press/hero-tablet.png')
+        .press-card
+            .logo
+                img
+                    max-width: 90%
+                    max-height: initial
+                    height: auto
+
+@media (max-width: 480px)
+    #press
+        .hero
+            background-image: url('/images/press/hero-mobile.png')

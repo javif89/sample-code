@@ -1,0 +1,353 @@
+.ricoma-logo
+    max-height: 43px
+    width: 165px
+    img
+        max-height: 43px
+        width: 165px
+// #main-menu
+//     -webkit-transition: max-height .3s 
+//     -moz-transition: max-height .3s 
+//     -ms-transition: max-height .3s 
+//     -o-transition: max-height .3s 
+//     transition: max-height .3s 
+//     max-height: 185px
+.remove
+    height: 0
+    overflow: hidden
+    padding: 0 !important
+.menu-border
+    width: 100vw
+    position: relative
+    left: calc(-50vw + 50%)
+    height: 1px
+    border-bottom: 	1px solid #E6E6E7
+#main-menu-container
+    z-index: 999
+    // height: auto
+    width: 100%
+    padding: 0px 74px 0px
+    background: #FFFFFF
+    border-bottom: 1px solid #E6E6E7
+    .expanded-menu
+        position: relative
+        display: flex
+        flex-direction: column
+        width: 100%
+        background: #FFFFFF
+        .first-row
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: flex-start
+            padding: 21px 0px
+            .support-container
+                display: flex
+                flex-direction: row
+                margin-left: auto
+                align-items: center
+                .line
+                    box-sizing: border-box
+                    height: 32px
+                    width: 2px
+                    border: 1px solid #E6E6E7
+                    margin: 0 .5rem
+                .phone
+                    .phone-number
+                        color: #F27D21
+                        font-size: 13px
+                        line-height: 31px
+                        text-align: center
+                .support-link
+                    color: #000000
+                    font-size: 13px
+                    line-height: 31px
+                    text-align: center
+                    font-weight: 600
+                .change-lang
+                    display: flex
+                    flex-direction: row
+                    .btn.dropdown-toggle
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        &::after
+                            margin-top: auto
+                            margin-bottom: .375rem
+                        .lang-selected
+                            display: flex
+                            flex-direction: column
+        .ricoma-club-btn
+            cursor: pointer
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 47px
+            max-height: 47px
+            width: 220px
+            border-radius: 4px
+            color: #FFFFFF !important
+            font-size: 14px
+            font-weight: bold
+            letter-spacing: 0.15px
+            line-height: 36px
+            text-align: center
+            .fa-chevron-right
+                margin-left: 9px
+        .sticky-nav .nav-item
+            // color: #000000
+            // font-size: 14px
+            // font-weight: 600
+            // line-height: 31px
+            // text-align: center
+            // height: 100%
+        .sticky-nav
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            height: 84px
+            margin-top: 4.5px
+            position: relative
+            .search-bar
+                height: 46px
+                width: 320px
+                border-radius: 4px
+                background: #F9F9F9
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                padding: 13px 7px
+                .fa-search
+                    height: 19px
+                    width: 19px
+                    margin: 0px 11px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    font-size: 19px
+                &>div
+                    width: 100%
+                .input-group
+                    width: 100%
+
+                    input:focus
+                        outline: none
+                        box-shadow: none
+                input
+                    background: #F9F9F9
+                    border: none
+                    width: 100%
+                    font-weight: bold
+                    color: black
+                    &::placeholder
+                        color: #A0A2A6
+                        font-size: 16px
+                        font-style: italic
+                        line-height: 22px
+                        font-weight: normal
+                &:focus-within
+                    border: 1px solid black
+    .active-border
+        height: 6px
+        width: 0
+        border-radius: 3px
+        background-color: #F17D21
+        margin-top: auto
+        -webkit-transition: width 0.1s ease-in-out
+        -moz-transition: width 0.1s ease-in-out
+        -o-transition: width 0.1s ease-in-out
+        transition: width 0.1s ease-in-out
+    .nav-item
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 27px
+        cursor: pointer
+        color: #000000
+        font-size: 14px
+        font-weight: 600
+        line-height: 31px
+        text-align: center
+        height: 100%
+        &:hover
+            // font-weight: 700!important
+            .active-border
+                width: 100%
+    .hover-menu.active
+        .active-border
+            width: 100%
+.menu-content
+    display: none
+    width: 100%
+    background: #FFFFFF
+    position: fixed
+    left: 0
+    height: auto
+    background: #FFFFFF
+    border-top: 1px solid #E6E6E7
+    border-bottom: 1px solid #E6E6E7
+    .container
+        display: flex
+        flex-direction: row
+        .side-border
+            width: 1px
+            margin: 0px 30px
+            border-right: 1px solid #E3E4E4 
+        .menu-section2
+            display: flex
+            flex-direction: row
+            width: 644px
+            padding: 20px 0px
+            a.menu-link
+                text-decoration: none
+                &:hover
+                    .menu-header
+                        color: #F17D21
+        .section2-container
+            display: flex
+            flex-direction: column
+            width: auto
+            margin: 0px 20px
+            .menu-header
+                margin: 4px 0px
+            .category-url
+                justify-content: flex-start
+            .submenu-item
+                max-width: 344px
+        .menu-section
+            display: flex
+            flex-direction: column
+            padding: 9px 0px
+        .menu-header
+            color: #131313
+            font-size: 25px
+            font-weight: 600
+            line-height: 32px
+            margin: 8px 0px
+        .menu-img
+            margin: 8px 0px
+            height: 144px
+            width: 222px
+            border-radius: 8px
+            background-color: #000000
+            min-width: 222px
+            overflow: hidden
+        .chroma-preview
+            background: url('/images/chroma/video-bg.jpg') no-repeat center center
+        .submenu-container
+            display: flex
+            flex-direction: row
+        .submenu-item
+            max-width: 183px
+            margin: 8px 0px
+        .submenu-item:nth-child(2)
+            margin-left: 10px
+            margin-right: 10px
+        .item-header
+            color: #9FA1A7
+            font-size: 12px
+            font-weight: 600
+            letter-spacing: 0.86px
+            line-height: 30px
+        .item
+            color: #000000
+            font-size: 14px
+            font-weight: 600
+            line-height: 32px
+        .item-description
+            color: #9FA1A7
+            font-size: 13px
+            line-height: 21px
+        .item-description2
+            color: #000000
+            font-size: 16px
+            line-height: 30px
+            font-weight: normal
+        .nav-link
+            text-decoration: none
+            padding: 0
+            font-weight: normal
+            &:hover
+                .item
+                    color: #F27D21
+        .category-url
+            justify-content: flex-end
+            color: #0083EA
+            font-size: 11px
+            font-weight: bold
+            line-height: 30px
+            display: flex
+            align-items: center
+            text-decoration: none
+            margin-top: auto
+            &:hover
+                color: #0060AB !important
+            .fa-long-arrow-alt-right
+                margin: 0px 3px
+                font-size: 18px
+                text-decoration: none !important
+        .machines-menu
+            max-width: 560px
+            width: 100%
+        .accessories-menu
+            max-width: 417px
+            width: 100%
+            .submenu-container
+                flex-wrap: wrap
+                justify-content: space-between
+            .menu-item
+                min-width: 177px
+                max-width: 183px
+            //     margin: 8px 0px
+            // .menu-item:nth-child(odd)
+            //     margin-right: 25px
+            // .menu-item:nth-child(even)
+            //     margin-left: 25px
+        .software-menu
+            max-width: 297px
+            width: 100%
+        .tradeshow-menu
+            display: flex
+            flex-direction: row
+#other-prod-menu
+    .other-menu
+        width: 186px
+    .menu-header
+        font-size: 21px
+    .side-border
+        margin: 0 20px
+    .category-url
+
+            
+.hover-menu
+    height: 100%
+a.hover-menu
+    text-decoration: none
+.emb-dropdown
+    &:hover
+        #embroidery-menu
+            display: block
+.events-dropdown
+    &:hover
+        #events-menu
+            display: block
+.contact-dropdown
+    &:hover
+        #contact-menu
+            display: block
+.other-prod-dropdown
+    &:hover
+        #other-prod-menu
+            display: block
+// #embroidery-menu
+//     display: block
+#mobile-menu
+    display: none
+
+@media (max-width: $xl-bp)
+    #main-menu-container
+        padding: 0
+        #expanded-menu
+            max-width: 100%!important
+            .section-container 
+                max-width: 100%

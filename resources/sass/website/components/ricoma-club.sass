@@ -1,0 +1,105 @@
+#ricomaClubModal
+    .modal-dialog
+        top: 26%
+        max-width: 826px
+        .modal-content
+            height: 671px
+            width: 826px
+            background: transparent
+            border: none
+            .club-section
+                // padding: 0px 8px
+                display: flex
+                flex-direction: row
+                width: 100%
+                align-items: center
+                background: #FFFFFF
+                border-radius: 4px
+                .club-image-container
+                    height: 100%
+                    width: 400px
+                    background: url('/images/Ricoma Club Desktop.png')
+                    border-radius: 4px
+                    .img-fluid
+                        border-radius: 4px
+                #club-form-container
+                    padding: 40px 28px
+                    width: 400px
+                    .form-header
+                        color: #000000
+                        font-size: 31px
+                        font-weight: 800
+                        line-height: 34px
+                        text-align: center
+                        margin: 6px 0px
+                    .form-description
+                        margin: 6px 0px
+                    #hubspot-form
+                        margin: 36px 0px
+                        .hs-form
+                            .hs-form-field
+                                margin: 16px 0px
+                            ul.no-list
+                                li
+                                    list-style-type: none
+                            .hs_submit
+                                .actions
+                                    margin: 30px 0px
+                                    padding: 0px
+            .club-footer
+                height: 95px
+                background: transparent
+                display: flex
+                justify-content: center
+                .close-btn
+                    display: flex
+                    flex-direction: column
+                    color: #ffffff
+                    justify-content: center
+                    font-size: 14px
+                    font-weight: 600
+                    line-height: 31px
+                    text-align: center
+                    .fa-times-circle
+                        font-size: 28px
+                        font-weight: 300
+                        margin: 0 auto
+@media (max-width: $md-bp)
+    #ricomaClubModal
+        .modal-dialog
+            top: 20%
+            max-width: 698px !important
+            .modal-content
+                // height: 606px
+                height: auto
+                width: 100%
+                .club-section
+                    .club-image-container
+                        height: 100%
+                    .club-form-container
+                        .form-header
+                            font-size: 28px
+                            line-height: 38px
+@media (max-width: $sm-bp)
+    #ricomaClubModal
+        .modal-dialog
+            margin: 0 auto
+            max-width: 93vw !important
+            top: 40px
+            .modal-content
+                width: 93vw !important
+                height: auto
+                .club-section
+                    .club-image-container
+                        display: none
+                    #club-form-container
+                        width: 100%
+                        padding: 24px 16px
+                        .form-header
+                            font-size: 26px
+                            line-height: 34px
+                            text-align: center
+                        .form-description
+                            font-size: 16px
+                            line-height: 25px
+                            text-align: center

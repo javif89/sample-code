@@ -1,0 +1,100 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+@import "mixins";
+
+@import "overrides";
+@import "util";
+
+// Components
+@import "toggle-switch";
+@import "toasts";
+
+@import "tables";
+@import "products";
+@import "careers";
+@import "events";
+
+#sidenav-collapse-main {
+  .nav-link.active {
+    color: #5e72e4 !important;
+    font-weight: bold;
+  }
+
+  .nav-link.active::before {
+    border-left: 4px solid #5e72e4 !important;
+  }
+}
+
+#product-edit-menu,#product-category-menu {
+  li {
+    padding: 0;
+    .nav-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1rem;
+    }
+
+    .nav-link.active {
+      background-color: $color-primary;
+      border: none;
+      color: white;
+      border-radius: 0;
+    }
+
+    .nav-link:hover {
+      cursor: pointer;
+    }
+
+    .nav-link:not(.active):hover,
+    li:hover {
+      border: none !important;
+      outline: none !important;
+      border-radius: 0;
+      color: $color-primary;
+    }
+  }
+}
+
+.spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border 0.75s linear infinite;
+  animation: spinner-border 0.75s linear infinite;
+}
+
+spinner-border {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border 0.75s linear infinite;
+  animation: spinner-border 0.75s linear infinite;
+}
+
+.typeahead__dropdown, .typeahead__list {
+  margin-top: 22px !important;
+}

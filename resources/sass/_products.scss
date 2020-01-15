@@ -1,0 +1,22 @@
+#products-table {
+    .card-header {
+        padding: 0;
+
+        .nav-link {
+            padding: 15px 0;
+        }
+
+        .nav-link.active {
+            background-color: transparent;
+            color: $color-primary;
+            border: none;
+            border-bottom: 4px solid $color-primary;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: $color-primary;
+            cursor: pointer;
+        }
+    }
+}

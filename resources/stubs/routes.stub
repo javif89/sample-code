@@ -1,0 +1,12 @@
+
+/**
+    Routes for {{resource_name}}
+*/
+Route::group(['middleware' => 'auth'], function () {
+    Route::prefix('{{resource_name}}')->group(function () {
+        Route::post('', '{{controller_name}}@create')->name('create-{{resource_name}}');
+        Route::put('/{id}', '{{controller_name}}@update')->name('update-{{resource_name}}');
+        Route::delete('/{id}', '{{controller_name}}@delete')->name('delete-{{resource_name}}');
+    });
+});
+

@@ -1,0 +1,95 @@
+.menu_wrapper
+    padding: 0 1.25rem
+    border-bottom: 1px solid #E7E7E8
+    height: $headerHeight
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .menu_container
+        padding: 0 1.25rem
+        display: flex
+        flex-flow: row wrap
+        width: 100%
+
+        .top_row
+            display: flex
+            justify-content: space-between
+            width: 100%
+
+        .bottom_row
+            display: flex
+            width: 100%
+            margin-top: 25px
+
+    #langList
+        z-index: 1
+
+    .locale
+        text-transform: uppercase
+        color: #000000
+        font-size: 12px
+        font-weight: 600
+        line-height: 17px
+
+    .globe_icon, .locale
+        z-index: -1
+
+    .newsletter_btn
+        height: 47px
+
+    .phone_number
+        color: $orange
+
+    .phone_info, .support_link, .lang_btn
+        padding-right: 1rem
+        margin-right: 1rem
+
+    .phone_info, .support_link
+        border-right: 1px solid #E6E6E7
+        color: #000000
+        font-size: 13px
+        line-height: 31px
+        font-weight: $light
+
+    .hamburger
+        z-index: 1
+        float: right
+
+        &:focus
+            outline: none
+
+        &:hover
+            cursor: pointer
+
+        span
+            z-index: -1
+
+@media (max-width: $xl-bp)
+    .menu_wrapper
+        height: $headerHeightTablet
+
+        .menu_container
+            .bottom_row
+                position: fixed
+                left: 0
+                top: calc(#{$promoBannerHeight} + #{$headerHeightTablet})
+                width: 100%
+                background: white
+                z-index: 9999
+                height: 100vh
+                margin-top: 0
+                margin-left: 0
+
+            .slide-enter-active
+                +transit(margin-left 270ms cubic-bezier(0, 0, 0.58, 1), margin-right 270ms cubic-bezier(0, 0, 0.58, 1))
+
+            .slide-leave-active
+                +transit(margin-left 270ms cubic-bezier(0, 0, 0.58, 1), margin-right 270ms cubic-bezier(0, 0, 0.58, 1))
+
+            .slide-enter, .slide-leave-to
+                margin-left: 100%
+
+@media (max-width: $sm-bp)
+    .menu_wrapper
+        height: $headerHeightMobile

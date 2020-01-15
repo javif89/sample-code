@@ -1,0 +1,327 @@
+#tradeshow-container
+    padding: 0px
+    font-family: "Open Sans"
+    background-color: #FAFAFA
+    .hero_wrapper
+        height: 421px
+        width: 100%
+        background-size: cover
+        display: flex
+        flex-direction: column
+        padding: 149px 76px
+        position: relative
+        .redirect-fixed
+            position: absolute
+            top: 0
+            display: flex
+            flex-direction: row
+            align-items: center
+            .tradeshows-link
+                a
+                    color: #FFFFFF
+                    font-size: 12px
+                    font-weight: 800
+                    line-height: 43px
+            .fa-play
+                color: #A0A2A6
+                font-size: 12px
+            .small-name
+                color: #B3B5B8
+                font-size: 12px
+                font-weight: 800
+                line-height: 43px
+        .redirect-fixed > *
+            margin: 0px 6px
+        .hero_header
+            color: #FFFFFF
+            font-size: 55px
+            font-weight: 800
+            line-height: 72px
+            margin-bottom: 4px
+        .hero_subheader
+            color: #FFFFFF
+            font-size: 30px
+            line-height: 31px
+            margin-top: 4px
+    .social-links
+        margin: -27px 73px 0px
+        height: 55px
+        width: 266px
+        background: #FFFFFF
+        border-radius: 4px
+        position: relative
+        display: flex
+        flex-direction: row
+        justify-content: space-evenly
+        align-items: center
+        .share-text
+            height: 47px
+            width: 47px
+            border-radius: 4px
+            background-color: #FFFFFF
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #000000
+            font-size: 12px
+            font-weight: bold
+            line-height: 30px
+        .share-link
+            color: #FFFFFF !important
+            height: 47px
+            width: 47px
+            border-radius: 4px
+            background-color: #000000 !important
+            display: flex
+            justify-content: center
+            align-items: center
+    #mobile-location-container
+        display: none
+    #desktop-location-container
+        padding: 90px 73px
+        display: flex
+        flex-direction: row
+        max-width: 1294px
+        margin: 0 auto
+        position: relative
+        .tradeshow-location-container
+            width: 607px
+            margin-right: 60px
+            .tradeshow-location-info
+                display: flex
+                flex-direction: column
+                margin: 4px 0px
+                .location
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                .location-name
+                    color: #000000
+                    font-weight: bold
+                    line-height: 25px
+                .location > *
+                    margin: 0px 5px
+                    font-size: 21px
+                .tradeshow-address
+                    color: #000000
+                    font-size: 18px
+                    line-height: 25px
+                .tradeshow-booth
+                    color: #000000
+                    font-size: 18px
+                    line-height: 25px
+            .tradeshow-location-info > *
+                margin: 4px 0px
+            .tradeshow-description
+                color: #000000
+                font-size: 16px
+                line-height: 30px
+            .tradeshow-promo
+                margin: 17px
+                color: #000000
+                font-size: 16px
+                line-height: 25px
+                width: fit-content
+                padding: 10px
+                border-radius: 4px
+                background-color: #FFFFFF
+                display: flex
+                justify-content: center
+                align-items: center
+            .action-btns
+                display: flex
+                flex-direction: row
+                .register-btn
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    color: #FFFFFF
+                    height: 60px
+                    width: 220px
+                    border-radius: 4px
+                    margin-right: 7px
+                    background: linear-gradient(90deg, #FF7200 0%, #FC9500 100%)
+                    text-transform: uppercase
+                    font-weight: 700
+                .register-btn > *
+                    margin: 0px 4px
+                .redirect-btn
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    height: 60px
+                    width: 233px
+                    border-radius: 4px
+                    background-color: #C7C7C7
+                    color: #FFFFFF
+                    margin-left: 7px
+                    font-weight: 700
+        .tradeshow-map-container
+            margin-left: 60px
+            height: 407px
+            width: 577px
+            background-color: #FFFFFF
+            border: 10px solid white
+            #map
+                height: 386px
+                width: 555px
+@media (max-width: $xl-bp)
+    #tradeshow-container
+        overflow: hidden
+        #desktop-location-container
+            display: flex
+        #mobile-location-container
+            display: none
+@media (max-width: $lg-bp)
+    #tradeshow-container
+        overflow: hidden
+        .hero_wrapper
+            height: 363px
+            padding: 128px 35px
+            .redirect-fixed
+                .tradeshows-link
+                    a
+                        line-height: 60px
+                .small-name
+                    line-height: 60px
+            .hero_header
+                font-size: 42px
+                margin-bottom: 0px
+            .hero_subheader
+                font-size: 25px
+                margin-top: 0px
+        .social-links
+            height: 76px
+            width: 362px
+            margin: -38px 35px 0px
+            .share-text
+                height: 64px
+                width: 64px
+            .share-link
+                height: 64px
+                width: 64px
+                font-size: 22px
+        #desktop-location-container
+            display: none
+        #mobile-location-container
+            display: flex
+            padding: 30px 35px
+            .tradeshow-location-container
+                width: 100%
+                margin: 0px
+                .tradeshow-location-info
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    margin-bottom: 30px
+                    .mobile-location
+                        width: 378px
+                        .location
+                            .fa-map-marker-alt
+                                display: none
+                            .location-name
+                                font-size: 29px
+                                font-weight: bold
+                                line-height: 39px
+                        .tradeshow-address
+                            font-size: 18px
+                    .tradeshow-map-container
+                        height: 200px
+                        width: 320px
+                        #map
+                            height: 100%
+                            width: 100%
+                .tradeshow-description
+                    font-size: 16px
+                    line-height: 30px
+                .tradeshow-promo
+                    margin: 17px
+                    color: #000000
+                    font-size: 16px
+                    line-height: 25px
+                    height: 43px
+                    width: fit-content
+                    padding: 5px 10px
+                    border-radius: 4px
+                    background-color: #FFFFFF
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                .action-btns
+                    display: flex
+                    justify-content: space-between
+                    .register-btn
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        color: #FFFFFF
+                        border-radius: 4px
+                        background: linear-gradient(90deg, #FF7200 0%, #FC9500 100%)
+                        height: 60px
+                        width: 342px
+                    .redirect-btn
+                        height: 60px
+                        width: 342px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        border-radius: 4px
+                        background-color: #C7C7C7
+                        color: #FFFFFF
+                
+            .tradeshow-location-container > *
+                margin: 25px 0px
+@media (max-width: $sm-bp)
+    #tradeshow-container
+        .hero_wrapper
+            height: 271px
+            padding: 90px 45px
+            .hero_header
+                font-size: 30px
+                font-weight: 800
+                line-height: 40px
+                text-align: center
+            .hero_subheader
+                font-size: 20px
+                line-height: 31px
+                text-align: center
+        .social-links
+            height: 67px
+            width: 324px
+            margin: -38px auto 0px
+            .share-link
+                height: 57px
+                width: 57px
+                font-size: 20px
+        #mobile-location-container
+            padding: 17px 15px
+            .tradeshow-location-container
+                .tradeshow-location-info
+                    flex-direction: column
+                    .mobile-location
+                        width: 100%
+                        margin-bottom: 14px
+                        .location
+                            font-size: 29px
+                            font-weight: bold
+                            line-height: 39px
+                        .location > *
+                            margin: 0px
+                    .mobile-location > *
+                        margin: 5px 0px
+                    .tradeshow-map-container
+                        height: 177px
+                        width: 335px
+                .tradeshow-promo
+                    text-align: center
+                    margin: 10px
+                    height: auto
+                .action-btns
+                    display: flex
+                    justify-content: center
+                    flex-direction: column
+                    .register-btn > *
+                        margin: 0px 5px
+                .action-btns > *
+                    margin: 10px auto
+                    width: 100% !important

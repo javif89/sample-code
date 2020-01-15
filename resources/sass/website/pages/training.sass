@@ -1,0 +1,200 @@
+#training
+    h1
+        font-size: 45px
+        line-height: 55px
+        font-weight: 800
+    h2
+        font-size: 40px
+        font-weight: 800
+        line-height: 52px
+    h3
+        font-size: 26px
+        font-weight: bold
+        line-height: 25px
+
+    .hero
+        background-image: url('/images/training/hero-desktop.jpg')
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        height: 600px
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+        .content
+            margin-left: 80px
+
+    .checkmark-item
+        margin-bottom: 30px
+
+        img
+            float: left
+            margin-top: 5px
+
+        .content
+            display: block
+            overflow: hidden
+            padding-left: 20px
+
+            p
+                font-size: 16px
+                line-height: 30px
+    #training-grid
+        display: grid
+        grid-template-columns: [col-start] 50% [col-mid] 50% [col-end]
+        grid-template-rows: [row-start] 100% [row-end]
+        grid-column-gap: 2px
+        width: 100%
+        height: 350px
+        margin-top: 2px
+
+        .item
+            padding: 0 150px
+        
+        #onsite-training
+            grid-column: col-start / col-mid
+            grid-row: row-start / row-end
+            background: url('/images/training/onsite.jpg') no-repeat center center
+            background-size: cover
+        #online-training
+            grid-column: col-mid / col-end
+            grid-row: row-start / row-end
+            background: url('/images/training/online.jpg') no-repeat center center
+            background-size: cover
+    .resource
+        h4
+            line-height: 0
+            margin: 30px 0
+            margin-bottom: 15px
+            text-transform: uppercase
+            font-size: 21px
+            font-weight: bold
+
+
+
+    .learn-more-link
+        color: #0083EA
+        font-size: 16px
+        text-transform: uppercase
+        font-weight: bold
+    #faq-section
+        background-color: white
+        color: black
+        margin-left: 0px
+        margin-right: 0px
+        .card
+            background-color: transparent
+            border: none
+        .card-header
+            background-color: transparent
+            border: none
+            padding: 0
+            display: flex
+            justify-content: flex-start
+            align-items: stretch
+            font-size: 26px
+            font-weight: bold
+            cursor: pointer
+
+            .plus-button
+                background-color: black !important
+                color: white
+                padding: 15px
+                margin-right: 0
+                border-bottom: 4px solid white
+                display: flex
+                align-items: center
+            i
+                float: left
+            span
+                display: block
+                overflow: hidden
+                border: 4px solid black
+                border-left: none
+                width: 100%
+                padding: 10px
+        .card:last-child
+            .plus-button
+                border-bottom: none
+    .google-reviews-carousel
+        .slick-track
+            display: flex
+            align-items: stretch
+            .slick-slide
+                height: auto
+                align-items: center //optional
+                justify-content: center //optional
+        .facebook-card
+            .card-header
+                background-color: white
+                border-bottom: none
+            .name
+                color: #385898
+                font-size: 16px
+                font-weight: bold
+
+    #form-modal.show 
+        background: rgba(0, 0, 0, 0.7)
+    #hubspot-form
+        form
+            margin: 0 !important
+        fieldset
+            padding: 0 30px
+        .hs_submit
+            height: auto
+            padding: 0
+            .actions
+                padding: 0 20px
+                padding-right: 0
+            input
+                text-transform: uppercase
+                font-weight: 600
+                border-radius: 0
+
+@media (max-width: 768px)
+    #training
+        .hero
+            background-image: url('/images/training/hero-tablet.jpg')
+            text-align: center
+
+            .content
+                max-width: 90%
+                margin: auto
+        #training-grid
+            height: 400px
+            .item
+                padding: 0 50px
+
+@media (max-width: 480px)
+    #training
+        h1
+            font-size: 30px
+            line-height: 42px
+            font-weight: 800
+        h2
+            font-size: 25px
+            font-weight: 800
+            line-height: 37px
+        h3
+            font-size: 20px
+            font-weight: bold
+            line-height: 32px
+        .hero
+            background-image: url('/images/training/hero-mobile.jpg')
+            height: auto
+            padding: 40px 0
+
+            .content
+                max-width: 90%
+                margin: auto
+        #training-grid
+            display: flex
+            flex-direction: column
+            height: auto
+
+            .item
+                padding: 50px 20px
+
+            #onsite-training
+                margin-bottom: 2px

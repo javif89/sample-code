@@ -1,0 +1,388 @@
+$inspire: #FF4269
+$plus: #FFFF45
+$luxe: #7C46FF
+$chroma-green: #00FFA2
+
+#chroma
+    color: white
+
+    .orange_gradient_btn
+        background: $chroma-green
+        color: black
+    .section
+        margin-top: 2px
+    .black_bg
+        background-color: black
+    .color-primary
+        color: $chroma-green !important
+    .small-title
+        font-weight: bold
+        color: $chroma-green
+        font-size: 13px
+        text-transform: uppercase
+    h2
+        font-size: 36px
+        line-height: 48px
+    h3
+        font-size: 26px
+        font-weight: bold
+    .icon
+        width: 32px
+        height: auto
+    .bg.inspire
+        background-color: $inspire
+    .bg.plus
+        background-color: $plus
+    .bg.luxe
+        background-color: $luxe
+
+    .hero_wrapper
+        background: url('/images/chroma/hero-bg.png') no-repeat center center
+        background-size: cover
+        padding: 2.25rem 1rem
+        margin-bottom: 2px
+        margin-left: -15px
+        margin-right: -15px
+
+        .green-on-hover
+            &:hover
+                background: #00AD6E !important
+        .transparent_btn
+            border: 1px solid white
+
+        .hero_img
+            max-width: 493px
+            width: 100%
+
+        .hero_header, .hero_header_body, .hero_footer
+            color: white
+            width: 100%
+
+        .category
+            font-size: 20px
+            line-height: 31px
+
+        h1
+            font-size: 55px
+            font-weight: $bold
+            line-height: 48px
+
+        .border_break
+            height: 1px
+            width: 100%
+            background-color: rgba(230, 230, 231, 0.17)
+            margin: 13px auto 36px
+
+        .hero_header_body
+            p
+                font-size: 16px
+                line-height: 30px
+
+        .hero_footer
+            .border_break
+                margin: 39px auto 13px
+
+            .light_purple_text
+                font-size: 12px
+                font-weight: $bold
+                text-transform: uppercase
+                line-height: 30px
+                color: #39393B !important
+
+            .icons_wrapper
+                float: right
+                display: flex
+                justify-content: center
+                align-items: center
+
+                .icons_container
+                    border-radius: 50%
+                    background-color: #121213
+                    height: 35px
+                    width: 35px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+
+                .icons_container:not(:last-child)
+                    margin-right: 20px
+    .video-section
+        background: url('/images/chroma/video-bg.jpg') no-repeat center center
+        background-size: cover
+        color: white
+        text-align: center
+        padding: 150px 0
+
+        .watch-btn
+            a
+                font-weight: light
+                font-weight: 300
+                font-size: 18px
+                text-transform: uppercase
+    .tabs
+        .tab-pane
+            background: black
+            height: auto
+
+        .tab_title
+            color: #FFFFFF
+            font-size: 26px
+            font-weight: 800
+            line-height: 38px
+            padding-bottom: 1rem
+            text-transform: capitalize
+
+        .included_tab_panel
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+
+            .title
+                color: #FFFFFF
+                font-size: 16px
+                font-weight: $bold
+
+            li
+                color: #FFFFFF
+                font-size: 16px
+                line-height: 30px
+
+        .nav-item
+            width: calc(100% / 3)
+            text-align: center
+            background: #131313
+            border-radius: 0
+            border: none
+            height: 91px
+
+            .nav-link
+                display: flex
+                height: 100%
+                align-items: center
+                justify-content: center
+                color: #959595
+                font-size: 21px
+                font-weight: $bold
+
+                &.active
+                    background: #131313
+                    border-radius: 0
+                    border: none
+                    color: #FFFFFF
+                    border-bottom: 3px solid white
+    .features-accordion
+        [class*='col-']
+            padding-right: 5px
+            padding-left: 5px
+        .header
+            margin-bottom: 6px
+        .heading
+            background-color: white
+            color: black
+            padding: 10px 20px
+            cursor: pointer
+            margin-bottom: 10px
+
+            h3
+                margin-bottom: 0
+        .heading.collapsed
+            .minus
+                display: none
+        .heading:not(.collapsed)
+            .plus
+                display: none
+        .features-row
+            margin-top: 8px
+            margin-bottom: 8px
+            .black
+                background: rgba(#1A1A1A, 0.5)
+                color: white
+                padding: 15px 20px
+                font-size: 20px
+            .inspire
+                background: rgba($inspire, 0.5)
+                color: $inspire
+            .plus
+                background: rgba($plus, 0.5)
+                color: $plus
+            .luxe
+                background: rgba($luxe, 0.5)
+                color: $luxe
+            .check-col
+                font-size: 20px
+                text-align: center
+                div
+                    padding: 15px 0
+            .hidden
+                opacity: 0
+        .features-row.small-txt
+            .black
+                font-size: 16px
+    .try-it
+        #tryit-grid
+            display: grid
+            grid-template-columns: [col-start] 50% [col-mid] 50% [col-end]
+            grid-template-rows: [row-start] 100% [row-end]
+            grid-column-gap: 2px
+            width: 100%
+            height: 350px
+            margin-top: 2px
+
+            .item
+                padding: 0 150px
+            
+            #video-training
+                grid-column: col-start / col-mid
+                grid-row: row-start / row-end
+                background: url('/images/chroma/video-training.jpg') no-repeat center center
+                background-size: cover
+            #technical-support
+                grid-column: col-mid / col-end
+                grid-row: row-start / row-end
+                background: url('/images/chroma/tech-support.jpg') no-repeat center center
+                background-size: cover
+    #faq-section
+        margin-bottom: 2px
+    #form-modal.show 
+        background: rgba(0, 0, 0, 0.7)
+
+        .system-option
+            border: 1px solid #000
+            font-size: 20px
+            display: block
+            padding: 10px
+            cursor: pointer
+            text-align: center
+
+        input[type="radio"]:checked + label
+            background: $chroma-green
+            border: 1px solid transparent
+    #hubspot-form
+        form
+            margin: 0 !important
+        fieldset
+            padding: 0 30px
+        .hs_submit
+            height: auto
+            padding: 0
+            input
+                background: $chroma-green
+                color: black
+            input:hover
+                box-shadow: none
+            .actions
+                padding: 0 20px
+                padding-right: 0
+            input
+                text-transform: uppercase
+                font-weight: 600
+                border-radius: 0
+
+#chroma-download
+    background-color: black
+    color: white
+    h2
+        font-size: 29px
+        font-weight: 800
+    h3
+        font-size: 21px
+        font-weight: 600
+
+        i
+            font-weight: normal
+
+    a
+        color: $chroma-green
+        text-decoration: underline
+        font-weight: normal
+        font-size: 18px
+    .border_break
+        border-bottom: 1px solid #e6e6e7
+        opacity: 0.15
+        margin: 10px 0
+    .logo
+        width: 380px
+        height: auto
+    .pic-section
+        flex: 1
+        padding: 40px 100px
+        background: url('/images/chroma/download-bg.png') no-repeat bottom left
+        background-size: cover
+        height: 630px
+    .link-section
+        flex: 0.5
+        padding-left: 30px
+    .desc-text
+        font-size: 20px
+
+@media (max-width: 768px)
+    #chroma
+        overflow-y: hidden
+        .hero_wrapper
+            margin: 0
+        #faq-section
+            margin: 0
+            margin-top: 2px
+            margin-bottom: 2px
+        .try-it
+            #tryit-grid
+                height: 400px
+                max-width: 100%
+                .item
+                    padding: 0 50px
+        .features
+            ul
+                list-style-position: inside
+                width: 100%
+                margin-left: 0
+                padding-left: 0
+    #chroma-download
+        .pic-section
+            padding: 40px 20px
+            height: auto
+        .link-section
+            padding-left: 0
+        
+
+@media (max-width: 480px)
+    #chroma
+        h3
+            font-size: 21px
+            line-height: 33px
+        .try-it
+            #tryit-grid
+                display: flex
+                flex-direction: column
+                height: auto
+
+                #video-training
+                    margin-bottom: 2px
+
+                .item
+                    padding: 50px 20px
+        .features-accordion
+            .heading
+                background-color: white
+                color: black
+                padding: 10px 20px
+                cursor: pointer
+                margin-bottom: 10px
+            .features-row
+                .black
+                    font-size: 12px
+                .check-col
+                    font-size: 12px
+        .tabs
+            .nav-item
+                .nav-link
+                    font-size: 14px
+                    line-height: 20px
+    #chroma-download
+        .pic-section
+            padding: 40px 15px
+        .logo
+            width: 300px
+        .desc-text
+            font-size: 14px

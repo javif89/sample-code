@@ -1,0 +1,21 @@
+@switch($panel)
+    @case('em')
+        <em-panel></em-panel>
+        @break
+    @case('tc')
+        <tc-panel></tc-panel>
+        @break
+    @case('8s')
+        <eights-panel></eights-panel>
+        @break
+    @case('cht')
+        <cht-panel></cht-panel>
+        @break
+    @case('mt')
+        <mt-panel></mt-panel>
+        @break
+    @case('mt1502')
+        <mttwo-panel></mttwo-panel>
+        @break
+    @default
+@endswitch

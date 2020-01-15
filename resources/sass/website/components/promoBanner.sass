@@ -1,0 +1,61 @@
+.promo_banner_wrapper
+    background: linear-gradient(90deg, #631789 0%, #3B2099 100%)
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 999
+    width: 100%
+    margin-bottom: 0
+    padding: 10px
+
+    .close-btn
+        color: white
+
+    .promo_banner_container
+        width: auto
+        text-decoration: none
+        text-align: center
+        line-height: 23px
+        .promo_title
+            font-size: 16px
+            font-weight: bold
+            letter-spacing: 1px
+            color: white
+            text-transform: uppercase
+            border-bottom: 1px solid #FFFFFF
+            line-height: 23px
+        .promo_text
+            color: rgba(255,255,255,0.7)
+            font-size: 16px
+            font-weight: 600
+            line-height: 23px
+            text-decoration: none !important
+
+        .promo_banner_btn
+            border-radius: 21px
+            background-color: rgba(216, 216, 216, 0.27)
+            color: #FFFFFF
+            font-size: 13px
+            font-weight: 600
+            letter-spacing: 1px
+            line-height: 23px
+            text-transform: uppercase
+            padding: 5px 25px
+            &:hover
+                color: #3C2099
+                background-color: #FFFFFF
+
+@media (max-width: $sm-bp)
+    .promo_banner_wrapper
+        width: 100%
+        .promo_banner_container
+            .promo_title
+                font-size: 13px
+            .promo_text
+                font-size: 13px
+                text-decoration: underline
+                text-align: center
+                display: block
+
+            .promo_banner_btn
+                display: none

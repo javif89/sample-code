@@ -1,0 +1,58 @@
+#plain-text
+    background-color: #FAFAFA
+
+    .top
+        text-align: center
+        .title
+            font-size: 45px
+            font-weight: 800
+            line-height: 55px
+        .date-updated
+            font-size: 20px
+            line-height: 31px
+            text-align: center
+            font-weight: regular
+    .body
+        a
+            color: #0082EA
+            font-weight: normal
+            text-decoration: underline
+
+        .header-list
+            a
+                color: black
+                font-size: 16px
+                font-weight: bold
+
+        span.roboto-bold
+            font-weight: 800
+
+        #one,#two,#three,#four,#five,#six,#contact-info,.heading
+            display: block
+            margin-bottom: 10px
+            font-size: 24px
+            font-weight: 800
+            line-height: 40px
+        ul,ol
+            li
+                margin-bottom: 30px
+                line-height: 30px
+        ol#two-list
+            counter-reset: item
+            padding-left: 10px
+            li
+                display: block
+                p
+                    display: block
+                    overflow: hidden
+            li::before
+                content: "2." counters(item, ".")
+                counter-increment: item
+                font-weight: bold
+                margin-right: 20px
+                float: left
+
+@media (min-width: 900px)
+    #plain-text
+        .container
+            width: 900px

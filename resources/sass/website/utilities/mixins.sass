@@ -1,0 +1,16 @@
+=keyframes($name)
+    @-webkit-keyframes #{$name}
+        @content
+    @-moz-keyframes #{$name}
+        @content
+    @-ms-keyframes #{$name}
+        @content
+    @keyframes #{$name}
+        @content
+
+=transit($param1, $param2)
+    -webkit-transition: $param1, $param2
+    -moz-transition: $param1, $param2
+    -ms-transition: $param1, $param2
+    -o-transition: $param1, $param2
+    transition: $param1, $param2

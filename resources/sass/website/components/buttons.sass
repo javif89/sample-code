@@ -1,0 +1,114 @@
+.orange_gradient_btn
+    height: 60px
+    width: 220px
+    border-radius: 30px
+    background: linear-gradient(90deg, #FF7200 0%, #FC9500 100%)
+    background-color: #FF7200
+    border: none
+    box-shadow: none
+    outline: none
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #FFFFFF
+    font-size: 14px
+    font-weight: $semibold
+    text-transform: uppercase
+    line-height: 30px
+    text-align: center
+    transition: box-shadow 0.3s ease, background-color 0.3s ease
+    position: relative
+    z-index: 1
+    cursor: pointer
+
+.orange_gradient_btn:hover
+    color: white
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2)
+    background: none !important
+    background-color: #dd6401 !important
+
+fieldset[disabled="disabled"]
+    .orange_gradient_btn:hover
+        background: linear-gradient(90deg, #FF7200 0%, #FC9500 100%) !important
+
+.gradient:hover::before
+    opacity: 1
+
+.purple_btn
+    box-sizing: border-box
+    height: 56px
+    width: fit-content
+    width: -moz-fit-content
+    width: intrinsic
+    border: 1px solid #3C2099
+    border-radius: 0 4px 4px 0
+    background-color: #3C2099
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0)
+    color: #FFFFFF
+    font-size: 14px
+    font-weight: $semibold
+    text-transform: uppercase
+    letter-spacing: 1px
+    padding: 0 1.5rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    transition: background-color 0.3sr
+
+.purple_btn:hover
+    color: white
+    background-color: #361d88
+
+.transparent_btn
+    height: 57px
+    width: 100%
+    border-radius: 4px
+    background-color: rgba(250, 250, 252, 0.09)
+    color: white
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: $semibold
+    line-height: 30px
+    text-align: center
+    transition: background-color 0.3s
+
+.transparent_btn:hover
+    color: white
+    background-color: rgba(250, 250, 252, 0.30)
+
+.square_btn
+    border-radius: 4px !important
+
+    &::before
+        border-radius: 4px
+
+.rounded_btn
+    border-radius: 30px !important
+
+.lang_btn
+    display: flex
+    flex-flow: column
+    align-items: flex-start
+    justify-content: center
+
+    a
+        display: flex
+        flex-flow: column
+        align-items: flex-start
+        justify-content: center
+
+    img
+        margin-left: 2px
+
+    .fas
+        margin-left: 0.2rem
+        color: #A0A2A6
+        font-size: 13px
+
+.btn-block
+    width: 100% !important
+    max-width: 100% !important
+
+@media (max-width: $sm-bp)
+    .orange_gradient_btn
+        width: auto
